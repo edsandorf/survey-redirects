@@ -1,12 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    <title>Our Funky HTML Page</title>
+    <title>Redirect to random survey link</title>
     <meta name="description" content="Our first page">
     <meta name="keywords" content="html tutorial template">
+    
+    <script>
+      var sites = [
+        'https://www.nrk.no',
+        'https://www.vg.no',
+        'https://www.aftenposten.no',
+        'https://www.f-b.no'
+      ];
+      
+      window.location.replace(sites[Math.floor(Math.random()*sites.length)])
+    </script>
+
   </head>
 
   <body>
-    Content goes here.
+    The website redirects to a random survey link
   </body>
 </html>
